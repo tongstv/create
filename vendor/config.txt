@@ -1,0 +1,12 @@
+"psr-4": {
+            "App\\": "app/",
+            "{{Name}}\\{{Package}}\\": "vendor/{{name}}/{{package}}/src/"
+        }
+
+
+//bootstrap/app.php
+$app->register({{Name}}\{{Package}}\{{Package}}ServiceProvider::class);
+
+php artisan make:migration create_{{package}}_table --create=create
+
+

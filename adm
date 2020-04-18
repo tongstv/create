@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+system("php ../artisan create admin " . $argv[1], $out);
+echo "Create admin ".$argv[1]." Done!";
+if(isset($argv[2]))
+{
+    system("php ../artisan create admin " . $argv[3], $out);
+
+    echo "Create admin ".$argv[2]." Done!";
+}
+
+if(isset($argv[3]))
+{
+    system("php ../artisan create admin " . $argv[3], $out);
+
+    echo "Create admin ".$argv[3]." Done!";
+}
+?>

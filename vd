@@ -1,0 +1,7 @@
+#!/usr/bin/env php
+<?php
+
+system("php ../artisan create vendor " . $argv[1], $out);
+echo "Create vendor " . $argv[1] . " Done!";
+
+?>

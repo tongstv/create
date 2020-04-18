@@ -1,0 +1,25 @@
+{
+    "name": "{{Name}}/{{Package}}",
+    "description": "",
+    "authors": [
+        {
+            "name": "Truong Van Tong",
+            "email": "tongstv@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "{{Name}}\\{{Package}}\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "{{Name}}\\{{Package}}\\{{Package}}ServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "minimum-stability": "dev"
+},
